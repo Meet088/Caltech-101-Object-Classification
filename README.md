@@ -134,6 +134,7 @@ Options:
 # Pending
 - Pictures showcasing the architecture of each model
 - Adding Visualization and graphs to the notebook as well as to this readme showcasing predictions and losses and comparisons between three models in terms of graphs
+- Explanation of why did I choose Caltech 101 dataset to work on for linkedin assignment and not some other dataset
 - Refactoring of `train.py` and `predict.py` - Even though they're readable, they're one long file for each which breaks SRP. 
 - Add a feature of using webcame to predict the object
 - Insights about which objects do all three approaches always get wrong - and why.
