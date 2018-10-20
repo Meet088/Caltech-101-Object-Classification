@@ -100,7 +100,7 @@ So, if you had to train the transfer learning model and wanted to print the tota
 
 You can use any of the three models that come in this repo (or can be trained via this repo). The corresponding model files are - `model_cnn.json`, `model_cnn_dropout.json` and `model_transfer_learning.json`.  
 
-**Note**: It is necessary to either train the models first, or [download the pre-trained weights for each of the models from here](https://drive.google.com/drive/folders/14F9aSvs_kKSqiqGXzwPMrfIWASrbKtqu?usp=sharing).  
+**Note**: It is necessary to either train the models first, or [download the pre-trained weights for each of the models from here](https://drive.google.com/file/d/1B89w0M6RYVTilanCnLwEEjFMPWnvrPu-/view?usp=sharing).  
 
 To test for any image (say airplane.jpg) which contains an object, you can run the command like :   
 
