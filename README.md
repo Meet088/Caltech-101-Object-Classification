@@ -40,7 +40,7 @@ One more reason for doing this was, people had already tried and tested SVM, KNN
 
 There are some ML libraries that need to be there for the scripts in this repository to work. You can easily install them by using pip.
 
-```$xslt
+```
 pip install -r requirements.txt
 ```
 
@@ -53,11 +53,11 @@ The scripts **`train.py`** and **`predict.py`** have been written as CLI tools. 
 ### Training
 
 
-**`python train.py --help`**
+`python train.py --help`
 
 wil give you the following output :
 
-```$xslt
+```
 Usage: train.py [OPTIONS] COMMAND [ARGS]...
 
   This is a simple cli tool to train different neural network models for
@@ -75,7 +75,7 @@ Commands:
 
 You could further check each of the command for what options they take.
 
-```$xslt
+```
 $ python train.py train_transfer_learning_model --help  
 
 Using TensorFlow backend.
@@ -94,23 +94,23 @@ Options:
 
 So, if you had to train the transfer learning model and wanted to print the total average accuracy once it has trained, then the command would look like : 
 
-`python train.py train_transfer_learning_model --print-average-accuracy`
+```python train.py train_transfer_learning_model --print-average-accuracy```
 
 ### Testing / Predicting
 
-You can use any of the three models that come in this repo (or can be trained via this repo). The corresponding model files are - `model_cnn.json`, `model_cnn_dropout.json` and `model_transfer_learning.json`. 
+You can use any of the three models that come in this repo (or can be trained via this repo). The corresponding model files are - `model_cnn.json`, `model_cnn_dropout.json` and `model_transfer_learning.json`.  
 
-**Note**: It is necessary to either train the models first, or [download the pre-trained weights for each of the models from here](https://drive.google.com/drive/folders/14F9aSvs_kKSqiqGXzwPMrfIWASrbKtqu?usp=sharing).
+**Note**: It is necessary to either train the models first, or [download the pre-trained weights for each of the models from here](https://drive.google.com/drive/folders/14F9aSvs_kKSqiqGXzwPMrfIWASrbKtqu?usp=sharing).  
 
-To test for any image (say airplane.jpg) which contains an object, you can run the command like : 
+To test for any image (say airplane.jpg) which contains an object, you can run the command like :   
 
-```$xslt
+```
 python predict.py --model-file-path /path/to/repo/model_cnn.json --image-path /path/to/image/airplane.jpg
 ```
 
-Again, if you need to know anything else about the command, it s documented like a CLI tool. So, just hit `--help` like so : 
+Again, if you need to know anything else about the command, it s documented like a CLI tool. So, just hit `--help` like so :  
 
-```$xslt
+```
 python predict.py --help  
 
 Using TensorFlow backend.
